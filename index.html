@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Personal Event Bridge</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<main>
+  <p class="eyebrow">A personal automation tool</p>
+  <h1>Personal Event Bridge</h1>
+  <p class="lead">Email notifications become reply suggestions for their owner to review.</p>
+  <p>Personal Event Bridge is operated by San Kim for personal use. It listens for Gmail mailbox events, selects configured notification types, and creates or continues a Codex task on the owner's computer.</p>
+  <p>The first workflow helps with Kleinanzeigen conversations. It combines a matching notification with the owner's relevant listing records and writing preferences to recommend a response. The owner decides whether to send anything.</p>
+  <h2>How access works</h2>
+  <p>The tool requests read-only Gmail access. Google's permission covers the mailbox; the tool's rules select the messages used for recommendations. It does not request permission to send, delete, relabel, or modify email.</p>
+  <p>Google Cloud delivers mailbox-change signals to a subscriber on the owner's Mac. Matching message content is processed by OpenAI through Codex to generate a recommendation. This is not an entirely offline AI system.</p>
+  <p>This website contains information about the tool. It offers no sign-up, mailbox connection, or access to private conversations.</p>
+  <nav aria-label="Information"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
+  <footer>For questions, use the developer contact shown on the Google consent screen.</footer>
+</main>
+</body>
+</html>
