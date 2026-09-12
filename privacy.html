@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Privacy policy · Personal Event Bridge</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<main>
+  <a href="index.html">Personal Event Bridge</a>
+  <h1>Privacy policy</h1>
+  <p class="eyebrow">Prepared September 12, 2026</p>
+  <p>San Kim operates Personal Event Bridge for personal use. This notice describes the tool's Gmail access and processing.</p>
+  <h2>Information accessed and purpose</h2>
+  <p>With the account owner's consent, the tool reads Gmail mailbox history and message metadata, including sender and subject, to identify configured notification types. For matching messages, it reads notification text, message identifiers, timestamps and conversation links. Related local listing records and writing preferences provide context for reply suggestions.</p>
+  <p>The Google permission is mailbox-wide read-only access. Filtering is enforced by the tool. The tool does not send messages or modify email, labels or read status.</p>
+  <h2>Processing and service providers</h2>
+  <p>Google Cloud Pub/Sub delivers mailbox-change notifications containing the account email address and a history cursor. Those notifications do not contain message bodies. The configured subscription retains unacknowledged notifications for up to seven days.</p>
+  <p>The local subscriber sends matching message content and relevant context to OpenAI through the owner's Codex account to generate recommendations. Codex tasks and the local queue retain this content. OpenAI's processing and retention are governed by its applicable service terms, privacy policy and the owner's account controls. Creating a task on the Mac does not mean the model runs locally.</p>
+  <p>The bridge does not sell Google user data, use it for advertising, or perform model training. Use and transfer of Google user data must comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. The operator must configure connected services consistently with those requirements.</p>
+  <h2>Storage and protection</h2>
+  <p>OAuth credentials, the message queue and operational logs are stored in the owner's local application-support directory with restricted file permissions. Credentials and raw notification samples are excluded from the source repository. The bridge's queue has no automatic content-deletion schedule; records remain until the owner deliberately removes them. Codex keeps its own task records separately.</p>
+  <h2>Control and deletion</h2>
+  <p>The owner can revoke this tool's access through <a href="https://myaccount.google.com/connections">Google Account connections</a> and stop the local service. Revoking access stops future authorized retrieval; it does not erase existing local queue entries, Codex tasks or service-provider records. Those must be removed separately through the relevant tools and account controls. Deleting operational state requires care to avoid unintentionally processing an old notification again.</p>
+  <h2>This information website</h2>
+  <p>This website has no forms, analytics scripts or mailbox data. Its hosting provider may process ordinary web-request information such as IP addresses as part of serving the pages.</p>
+  <h2>Contact and changes</h2>
+  <p>Use the developer contact shown on the Google consent screen for questions about this tool or its data handling. This notice must be updated when the tool's data practices change.</p>
+  <nav aria-label="Information"><a href="index.html">Home</a><a href="terms.html">Terms of use</a></nav>
+</main>
+</body>
+</html>
